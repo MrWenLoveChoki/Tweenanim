@@ -10,11 +10,11 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button button1;
-    private View button2;
-    private View button3;
-    private View button4;
-    private Button button5;
+    private Button  button1;
+    private View    button2;
+    private View    button3;
+    private View    button4;
+    private Button  button5;
     private ImageView viewById;
 
     @Override
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.pingyi:
                 Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.pingyi);
                 viewById.startAnimation(animation);
+                System.out.println("哈哈");
                 break;
             case R.id.xuanzhuan:
                 Animation animation3 = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.xuanzhuan);
